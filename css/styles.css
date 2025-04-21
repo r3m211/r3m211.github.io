@@ -1,0 +1,98 @@
+/* Custom CSS for Portfolio Website */
+
+/* Animation for sections */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Custom styling for form elements */
+.form-input {
+    @apply block w-full rounded-md border border-slate-300 dark:border-slate-600 p-2 text-slate-800 dark:text-white shadow-sm focus:border-primary focus:ring-primary focus:ring-1 dark:bg-slate-700;
+}
+
+.form-label {
+    @apply block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1;
+}
+
+.form-error {
+    @apply text-red-500 text-sm mt-1;
+}
+
+.form-submit {
+    @apply px-4 py-2 bg-primary hover:bg-primary-600 text-white font-medium rounded-md transition-colors;
+}
+
+/* Card hover effects */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Gradient text */
+.gradient-text {
+    background: linear-gradient(90deg, #3b82f6, #6366f1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+}
+
+/* Utility classes for spacing */
+.section-spacing {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+    .section-spacing {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+}
+
+/* Additional utility classes */
+.text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-shadow {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Code syntax highlighting */
+.code-block {
+    font-family: monospace;
+    background-color: #1e293b;
+    color: #e2e8f0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    line-height: 1.5;
+}
+
+.code-block .keyword {
+    color: #93c5fd;
+}
+
+.code-block .variable {
+    color: #c4b5fd;
+}
+
+.code-block .string {
+    color: #86efac;
+}
+
+.code-block .comment {
+    color: #94a3b8;
+}
